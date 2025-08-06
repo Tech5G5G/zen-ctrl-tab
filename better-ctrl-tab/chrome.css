@@ -5,7 +5,6 @@
 */
 @-moz-document url-prefix("chrome:") {
   :root {
-    /**
     --psu-better_ctrltab-roundness: 50px;
     --psu-better_ctrltab-padding: 35px;
     --psu-better_ctrltab-zoom: .8;
@@ -22,7 +21,6 @@
     
     --psu-better_ctrltab-preview_favicon_size: 36px;
     --psu-better_ctrltab-preview_favicon_outdent: 12px;
-/**/
 
     /* helpers */
     --psu-zoom-invert: pow(var(--psu-better_ctrltab-zoom), -1);
@@ -35,6 +33,7 @@
     --panel-shadow: 0 0 var(--psu-better_ctrltab-shadow_size) calc(var(--psu-better_ctrltab-shadow_size) / 3) rgba(1, 1, 4, 0.2) !important;
     --panel-background: var(--psu-better_ctrltab-background) !important;
     --panel-padding: 0 !important;
+    --panel-border-color: light-dark(rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.15)) !important;
     margin: 0 !important;
     padding: 0 !important;
     background-color: unset !important;
@@ -99,7 +98,7 @@
         .ctrlTab-canvas,
         img,
         canvas {
-          border-radius: calc(var(--psu-roundness-zoomed) * 0.25) !important;
+          border-radius: calc(var(--psu-roundness-zoomed) * 0.75) !important;
         }
 
         /* label styling */
